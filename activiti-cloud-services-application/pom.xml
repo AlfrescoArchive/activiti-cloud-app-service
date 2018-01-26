@@ -14,8 +14,10 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>activiti-cloud-services-app-core</module>
-
+    <module>activiti-cloud-services-app-api</module>
+    <module>activiti-cloud-services-app-local</module>
+    <module>activiti-cloud-services-app-kubernetes</module>
+    <module>activiti-cloud-services-app-services</module>
   </modules>
 
 </project>
