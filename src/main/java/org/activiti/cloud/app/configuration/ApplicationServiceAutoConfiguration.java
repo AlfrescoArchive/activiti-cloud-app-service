@@ -28,8 +28,8 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 @Configuration
-@ConditionalOnProperty(name = "activiti.cloud.services.apps-service.enabled", matchIfMissing = true)
-@PropertySource(value = "classpath:apps-service.properties",ignoreResourceNotFound = true)
+@ConditionalOnProperty(name = "activiti.cloud.services.app-service.enabled", matchIfMissing = true)
+@PropertySource(value = "classpath:app-service.properties",ignoreResourceNotFound = true)
 @EnableDiscoveryClient
 @EnableScheduling
 public class ApplicationServiceAutoConfiguration {
