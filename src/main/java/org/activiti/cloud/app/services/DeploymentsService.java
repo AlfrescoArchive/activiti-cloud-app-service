@@ -23,10 +23,10 @@ public class DeploymentsService {
 
     @Value("${activiti.cloud.config.url}")
     private String configServerURL;
-    @Value("${activiti.cloud.config.apps.entrypoint:apps}")
-    private String appsEntryPoint;
     @Value("${activiti.cloud.config.apps.namespace:/activiti-cloud-apps/dev/master/}")
     private String activitiCloudAppsNamespace;
+    @Value("${activiti.cloud.config.apps.entrypoint:apps}")
+    private String appsEntryPoint;
     @Value("${activiti.cloud.config.apps.descriptor.extension:.json}")
     private String descriptorExtension;
 
