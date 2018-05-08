@@ -10,8 +10,11 @@ Inside the configuration service, we have a set of JSON files that store the whi
 and how these applications are supposed to be conformed. These structures (which are static and contain also 
 service specific configurations) are used to compare against the Service Registry deployed services. 
 
-## How to run
-For now there is a docker compose file inside the docker/ directory which can be used to bootstrap the required 
+*The spring boot starter here is used in the example https://github.com/Activiti/activiti-cloud-registry 
+to provide a combined app service and registry. It can be run from there. For testing it can also be run from this repo.*
+
+## Run from this repo for testing
+For local testing there is a docker compose file inside the docker/ directory which can be used to bootstrap the required 
 infrastructure plus an application. Each service inside the application should set a variable called: 
 "activiti.cloud.application.name" which will be used by the Application Service to identify to which application each service
 belong. This name will be also used to check in the configuration service the application "configuration"(structure).

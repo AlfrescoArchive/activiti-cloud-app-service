@@ -20,6 +20,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 
+/**
+ * Compares expected deployments against running services
+ */
 @org.springframework.stereotype.Service
 public class ApplicationsService {
 

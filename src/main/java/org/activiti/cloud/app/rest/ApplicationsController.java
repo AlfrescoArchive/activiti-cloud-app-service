@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Report status of apps
+ */
 @RequestMapping(value = "/v1/apps")
 @RestController
 public class ApplicationsController {

@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Reports expected apps as per the 'deployment descriptor'
+ */
 @RequestMapping(value = "/v1/deployments")
 @RestController
 public class DeploymentsController {

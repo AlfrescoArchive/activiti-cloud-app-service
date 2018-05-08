@@ -15,6 +15,9 @@ import org.springframework.web.client.RestTemplate;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Retrieves deployments from config server
+ */
 @Service
 public class DeploymentsService {
 
