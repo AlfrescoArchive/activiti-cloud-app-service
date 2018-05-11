@@ -83,19 +83,21 @@ public class ApplicationsService {
             for (ServiceInstance serviceInstance : instances) {
 
                 Map<String, String> metadata = serviceInstance.getMetadata();
-                final String applicationName = metadata.get(AcitivitiMetadataAttrs.appName);
-                if (applicationName != null) {
-                    final String serviceType = metadata.get(AcitivitiMetadataAttrs.serviceType);
-                    LOGGER.debug("Application Name: " + applicationName);
-                    LOGGER.debug("Service Type: " + serviceType);
+                if(metadata!=null) {
+                    String applicationName = metadata.get(AcitivitiMetadataAttrs.appName);
+                    if (applicationName != null) {
+                        final String serviceType = metadata.get(AcitivitiMetadataAttrs.serviceType);
+                        LOGGER.debug("Application Name: " + applicationName);
+                        LOGGER.debug("Service Type: " + serviceType);
 
-                    Application activitiApplication = apps.get(applicationName);
-                    // If the ServiceInstance belong to an Activiti cloud Application, update the status inside the App
-                    if (activitiApplication != null) {
+                        Application activitiApplication = apps.get(applicationName);
+                        // If the ServiceInstance belong to an Activiti cloud Application, update the status inside the App
+                        if (activitiApplication != null) {
 
-                        updateServiceStatusAndURL(activitiApplication,
-                                                  serviceInstance,
-                                                  serviceType);
+                            updateServiceStatusAndURL(activitiApplication,
+                                    serviceInstance,
+                                    serviceType);
+                        }
                     }
                 }
             }
@@ -146,7 +148,7 @@ public class ApplicationsService {
     private void updateServiceStatusAndURL(Application activitiApplication,
                                            ServiceInstance i,
                                            String serviceType) {
-        if (ServiceType.AUDIT.name().equals(serviceType)) {
+        if (ServiceType.AUDIT.toString().equals(serviceType)) {
             Service activitiAuditService = findServiceByName(activitiApplication,
                                                              i.getServiceId());
             if (activitiAuditService != null) {
@@ -155,7 +157,7 @@ public class ApplicationsService {
                     activitiAuditService.setStatus(Status.UP);
                 }
             }
-        } else if (ServiceType.RUNTIME_BUNDLE.name().equals(serviceType)) {
+        } else if (ServiceType.RUNTIME_BUNDLE.toString().equals(serviceType)) {
             Service activitiRuntimeBundleService = findServiceByName(activitiApplication,
                                                                      i.getServiceId());
             if (activitiRuntimeBundleService != null) {
@@ -164,17 +166,16 @@ public class ApplicationsService {
                     activitiRuntimeBundleService.setStatus(Status.UP);
                 }
             }
-        } else if (ServiceType.QUERY.name().equals(serviceType)) {
+        } else if (ServiceType.QUERY.toString().equals(serviceType)) {
             Service activitiQueryService = findServiceByName(activitiApplication,
                                                              i.getServiceId());
-
             if (activitiQueryService != null) {
                 if (activitiQueryService.getServiceType().equals(ServiceType.QUERY)) {
                     activitiQueryService.setUrl(i.getUri().toString());
                     activitiQueryService.setStatus(Status.UP);
                 }
             }
-        } else if (ServiceType.CONNECTOR.name().equals(serviceType)) {
+        } else if (ServiceType.CONNECTOR.toString().equals(serviceType)) {
             Service activitiConnectorService = findServiceByName(activitiApplication,
                                                                  i.getServiceId());
             if (activitiConnectorService != null) {

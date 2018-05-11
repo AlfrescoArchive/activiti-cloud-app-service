@@ -51,7 +51,7 @@ public class ApplicationsServiceTest {
         ServiceInstance serviceInstance = mock(ServiceInstance.class);
         Map<String, String> metadata = new HashMap<>();
         metadata.put(AcitivitiMetadataAttrs.appName,"default-app");
-        metadata.put(AcitivitiMetadataAttrs.serviceType, ServiceType.RUNTIME_BUNDLE.name());
+        metadata.put(AcitivitiMetadataAttrs.serviceType, ServiceType.RUNTIME_BUNDLE.toString());
         when(serviceInstance.getMetadata()).thenReturn(metadata);
         when(serviceInstance.getServiceId()).thenReturn("rb-my-app");
         when(serviceInstance.getUri()).thenReturn(URI.create("dummyuri"));
