@@ -25,6 +25,7 @@
   </parent>
   <groupId>org.activiti.cloud.app</groupId>
   <artifactId>activiti-cloud-app-service-parent</artifactId>
+  <version>7.0.0-SNAPSHOT</version>
   <name>Activiti Cloud :: Application Service Parent</name>
   <packaging>pom</packaging>
   <url>http://activiti.org</url>
@@ -36,14 +37,18 @@
 
   <repositories>
     <repository>
-      <id>activiti-snapshots</id>
-      <name>Activiti Snapshots</name>
-      <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-snapshots/</url>
+      <id>alfresco</id>
+      <name>Activiti Releases</name>
+      <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases/</url>
       <releases>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
       </releases>
     </repository>
   </repositories>
+
+  <properties>
+    <activiti-cloud-service-common.version>7.0.0-SNAPSHOT</activiti-cloud-service-common.version>
+  </properties>
 
   <dependencyManagement>
     <!-- This duplicates activiti-cloud-app-dependencies module but we can't import that module here as this is its parent
