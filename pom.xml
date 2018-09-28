@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.activiti.cloud.build</groupId>
     <artifactId>activiti-cloud-parent</artifactId>
-    <version>7.0.8</version>
+    <version>7.0.9</version>
   </parent>
   <groupId>org.activiti.cloud.app</groupId>
   <artifactId>activiti-cloud-app-service-parent</artifactId>
