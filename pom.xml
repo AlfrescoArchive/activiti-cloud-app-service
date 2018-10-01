@@ -47,7 +47,7 @@
   </repositories>
 
   <properties>
-    <activiti-cloud-service-common.version>7.0.15</activiti-cloud-service-common.version>
+    <activiti-cloud-service-common.version>7.0.18</activiti-cloud-service-common.version>
   </properties>
 
   <dependencyManagement>
