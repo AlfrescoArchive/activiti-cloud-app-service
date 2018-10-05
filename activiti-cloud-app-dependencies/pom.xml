@@ -30,16 +30,9 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.activiti.cloud.common</groupId>
-        <artifactId>activiti-cloud-service-common-dependencies</artifactId>
-        <version>${activiti-cloud-service-common.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
         <groupId>org.activiti.cloud.app</groupId>
         <artifactId>activiti-cloud-app-service</artifactId>
-        <version>${activiti-cloud-app.version}</version>
+        <version>${activiti-cloud-app-service.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
