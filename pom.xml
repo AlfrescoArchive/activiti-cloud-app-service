@@ -49,7 +49,7 @@
   <properties>
     <activiti-cloud-app-service.version>${project.version}</activiti-cloud-app-service.version>
     <activiti-cloud-build.version>7.0.31</activiti-cloud-build.version>
-    <activiti-cloud-service-common.version>7.0.26</activiti-cloud-service-common.version>
+    <activiti-cloud-service-common.version>7.0.28</activiti-cloud-service-common.version>
   </properties>
 
   <dependencyManagement>
