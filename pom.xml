@@ -25,7 +25,7 @@
   </parent>
   <groupId>org.activiti.cloud.app</groupId>
   <artifactId>activiti-cloud-app-service-parent</artifactId>
-  <version>7.0.0-SNAPSHOT</version>
+  <version>7.0.21</version>
   <name>Activiti Cloud :: Application Service Parent</name>
   <packaging>pom</packaging>
   <url>http://activiti.org</url>
