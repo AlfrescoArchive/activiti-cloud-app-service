@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.activiti.cloud.build</groupId>
     <artifactId>activiti-cloud-parent</artifactId>
-    <version>7.0.31</version>
+    <version>7.0.33</version>
   </parent>
   <groupId>org.activiti.cloud.app</groupId>
   <artifactId>activiti-cloud-app-service-parent</artifactId>
@@ -46,10 +46,21 @@
     </repository>
   </repositories>
 
+  <scm>
+    <url>https://github.com/Activiti/activiti-cloud-connectors</url>
+    <connection>scm:git:https://github.com/Activiti/activiti-cloud-connectors.git</connection>
+    <developerConnection>scm:git:https://github.com/Activiti/activiti-cloud-connectors.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+  <ciManagement>
+    <system>Travis</system>
+    <url>https://travis-ci.com/Activiti/activiti-cloud-connectors</url>
+  </ciManagement>
+
   <properties>
     <activiti-cloud-app-service.version>${project.version}</activiti-cloud-app-service.version>
-    <activiti-cloud-build.version>7.0.31</activiti-cloud-build.version>
-    <activiti-cloud-service-common.version>7.0.28</activiti-cloud-service-common.version>
+    <activiti-cloud-build.version>7.0.33</activiti-cloud-build.version>
+    <activiti-cloud-service-common.version>7.0.29</activiti-cloud-service-common.version>
   </properties>
 
   <dependencyManagement>
