@@ -21,10 +21,10 @@
   <parent>
     <groupId>org.activiti.cloud.app</groupId>
     <artifactId>activiti-cloud-app-service-parent</artifactId>
-    <version>7.0.26</version>
+    <version>7.0.0.Beta3</version>
   </parent>
   <artifactId>activiti-cloud-app-dependencies</artifactId>
-  <version>7.0.26</version>
+  <version>7.0.0.Beta3</version>
   <packaging>pom</packaging>
   <name>Activiti Cloud :: App Service Dependencies BOM (Bill Of Materials)</name>
   <dependencyManagement>
