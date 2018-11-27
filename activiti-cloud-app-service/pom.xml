@@ -20,8 +20,9 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.activiti.cloud.app</groupId>
-    <artifactId>activiti-cloud-app-service-parent</artifactId>
+    <artifactId>activiti-cloud-app-dependencies</artifactId>
     <version>7.0.0-SNAPSHOT</version>
+    <relativePath>../activiti-cloud-app-dependencies</relativePath>
   </parent>
   <artifactId>activiti-cloud-app-service</artifactId>
   <name>Activiti Cloud :: Application Service</name>
