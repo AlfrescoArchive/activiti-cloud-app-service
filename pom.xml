@@ -61,7 +61,7 @@
   <properties>
     <activiti-cloud-app-service.version>${project.version}</activiti-cloud-app-service.version>
     <activiti-cloud-build.version>7.0.38</activiti-cloud-build.version>
-    <activiti-cloud-service-common.version>7.0.79</activiti-cloud-service-common.version>
+    <activiti-cloud-service-common.version>7.0.80</activiti-cloud-service-common.version>
   </properties>
 
   <dependencyManagement>
