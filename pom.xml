@@ -21,11 +21,11 @@
   <parent>
     <groupId>org.activiti.cloud.build</groupId>
     <artifactId>activiti-cloud-parent</artifactId>
-    <version>7.1.7</version>
+    <version>7.1.M3</version>
   </parent>
   <groupId>org.activiti.cloud.app</groupId>
   <artifactId>activiti-cloud-app-service-parent</artifactId>
-  <version>7.1.40</version>
+  <version>7.1.M3</version>
   <name>Activiti Cloud :: Application Service Parent</name>
   <packaging>pom</packaging>
   <url>http://activiti.org</url>
@@ -59,9 +59,9 @@
   </ciManagement>
 
   <properties>
-    <activiti-cloud-app-service.version>${project.version}</activiti-cloud-app-service.version>
-    <activiti-cloud-build.version>7.1.7</activiti-cloud-build.version>
-    <activiti-cloud-service-common.version>7.1.44</activiti-cloud-service-common.version>
+    <activiti-cloud-app-service.version>7.1.M3</activiti-cloud-app-service.version>
+    <activiti-cloud-build.version>7.1.M3</activiti-cloud-build.version>
+    <activiti-cloud-service-common.version>7.1.M3</activiti-cloud-service-common.version>
   </properties>
 
   <dependencyManagement>
