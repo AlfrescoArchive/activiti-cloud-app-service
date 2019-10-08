@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.activiti.cloud.app</groupId>
     <artifactId>activiti-cloud-app-dependencies</artifactId>
-    <version>7.1.0-SNAPSHOT</version>
+    <version>7.1.63</version>
     <relativePath>../activiti-cloud-app-dependencies</relativePath>
   </parent>
   <artifactId>activiti-cloud-app-service</artifactId>
