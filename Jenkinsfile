@@ -18,9 +18,13 @@ pipeline {
           HELM_RELEASE = "$PREVIEW_NAMESPACE".toLowerCase()
         }
         steps {
+            
           container('maven') {
-            sh "mvn versions:set -DnewVersion=$PREVIEW_VERSION"
-            sh "mvn install"
+            sh "printenv"
+            sh "echo -------PREVIEW_VERSION=${env.PREVIEW_VERSION}"
+              
+            //sh "mvn versions:set -DnewVersion=$PREVIEW_VERSION"
+            //sh "mvn install"
           }
         }
       }
